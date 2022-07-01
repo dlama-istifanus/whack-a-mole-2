@@ -1,0 +1,135 @@
+body{
+    background-color: yellowgreen;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;;
+}
+
+#container #header{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#container #header h1{
+    font-size: 4.8rem;
+}
+
+#container #header #score{
+    margin: auto 0;
+    text-align: center;
+    height: 8rem;
+    background-color: rgb(185, 238, 80);
+    padding: 0 1.5rem;
+    border-radius: 13px;
+}
+
+#container #header #score h1{
+    margin: 0.5rem 0;
+}
+
+#container #start{
+    width: 20%;
+    /* margin: 0 auto; */
+    border: 1px #000000 solid;
+    text-decoration: none;
+    background-color: yellowgreen;
+    color: #000000;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: ease 1000ms;
+}
+
+#container #start:hover{
+    background-color: rgb(185, 238, 80);
+}
+
+
+#container #body{
+    width: 60%;
+    margin: 0 auto;
+    display: flexbox;
+    justify-content: space-between;
+}
+
+#container #body div{
+    width: 25%;
+    display: inline-block;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: -80px;
+}
+
+#container #body div img{
+    width: 100%;
+}
+
+#container #body div #dirt{
+    position: relative;
+    top: 60px;
+}
+
+#container #body div #mole{
+    position: relative;
+    top: 280px;
+    width: 70%;
+    transition: ease 500ms;
+}
+
+#container #body div #mole img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 700px){
+    #container #header h1{
+        width: 70%;
+        font-size: 2.8rem;
+        display: inline-block;
+    }
+    
+    #container #header #score{
+        height: 50%;
+        align-self: center;
+        margin: 0;
+        background-color: rgb(185, 238, 80);
+        padding: 0.5rem 1.5rem;
+        border-radius: 13px;
+    }
+    
+    #container #header #score h1{
+        margin: 0;
+    }
+
+    #container #start{
+        width: 20%;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+    }
+
+    #container #body{
+        width: 80%;
+        margin: 0 auto;
+        display: flexbox;
+        justify-content: space-between;
+    }
+    
+    #container #body div{
+        width: 25%;
+    }
+
+    #container #body div #dirt{
+        top: 3rem;
+    }
+}
